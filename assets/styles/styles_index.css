@@ -39,7 +39,7 @@ header {
   align-items: center;
   border-radius: 10px;
   height: 50px;
-  width: 600px;
+  width: 100%;
 }
 
 .box-search input {
@@ -161,4 +161,90 @@ footer {
   color: #c9c9ff;
   font-weight: bold;
   font-size: small;
+}
+
+/*Diseño responsive para dispositivos móviles*/
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .box-logo {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .box-search {
+    width: 100%;
+    margin-top: 10px;
+    flex-direction: column;
+  }
+
+  .box-search input {
+    width: 90%;
+    margin-bottom: 5px;
+    border-radius: 10px;
+  }
+
+  .box-search button {
+    width: 90%;
+    border-radius: 10px;
+  }
+
+  .box-home {
+    width: 100%;
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  .box-home button {
+    width: 90%;
+  }
+
+  .box-login {
+    width: 90%;
+    height: auto;
+    margin-top: 50px;
+    padding: 20px;
+  }
+
+  .box-login img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .box-login input {
+    width: 100%;
+  }
+
+  .btn-secundary {
+    width: 100%;
+  }
+
+  footer {
+    padding: 20px;
+    font-size: x-small;
+  }
+}
+
+/* Para pantallas muy pequeñas (menos de 480px) */
+@media (max-width: 480px) {
+  header {
+    padding: 5px;
+  }
+
+  .box-search input {
+    font-size: 14px;
+  }
+
+  .btn-secundary {
+    font-size: medium;
+  }
+
+  footer {
+    font-size: xx-small;
+  }
 }
